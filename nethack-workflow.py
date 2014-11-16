@@ -2,13 +2,13 @@
 # encoding: utf-8
 
 import sys
-import food_data
+import corpse_data
 
 from workflow import Workflow
 
 log = None
 
-
+ 
 def main(wf):
     # The Workflow instance will be passed to the function
     # you call from `Workflow.run`
@@ -27,24 +27,24 @@ def main(wf):
 
 
     # Add an item to Alfred feedback
-    if food_data.food_list[i][1] != "":
-        wf.add_item('Nutrition', food_data.food_list[i][1], icon="img/nutrition_icon.png")
+    if corpse_data.corpse_list[i][1] != "":
+        wf.add_item('Nutrition', corpse_data.corpse_list[i][1], icon="img/nutrition_icon.png")
     else:
         wf.add_item("<"+query+">", icon="img/nethack_icon.png")
-    if food_data.food_list[i][2] != "":
-        wf.add_item('Inital effects', food_data.food_list[i][2], icon="img/ieffect_icon.png")
-    if food_data.food_list[i][3] != "":
-        wf.add_item('Final effects', food_data.food_list[i][2], icon="img/feffect_icon.png")
-    if food_data.food_list[i][4] != "":
-        wf.add_item('Intrinsics', food_data.food_list[i][4], icon="img/intrinsics_icon.png")
+    if corpse_data.corpse_list[i][2] != "":
+        wf.add_item('Inital effects', corpse_data.corpse_list[i][2], icon="img/ieffect_icon.png")
+    if corpse_data.corpse_list[i][3] != "":
+        wf.add_item('Final effects', corpse_data.corpse_list[i][2], icon="img/feffect_icon.png")
+    if corpse_data.corpse_list[i][4] != "":
+        wf.add_item('Intrinsics', corpse_data.corpse_list[i][4], icon="img/intrinsics_icon.png")
 
     # Send output to Alfred
     wf.send_feedback()
 
 def getItemPos(query):
-    for index in range(0,len(food_data.food_list)):
+    for index in range(0,len(corpse_data.corpse_list)):
         # TODO fuzzy matching
-        if query.lower() == food_data.food_list[index][0].lower():
+        if query.lower() == corpse_data.corpse_list[index][0].lower():
             return index;
     return 0
 

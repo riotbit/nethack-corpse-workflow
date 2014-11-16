@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-food_list =	[["","","","",""],
+corpse_list =	[["","","","",""],
 	["acolyte", "400", "Human", "",""],
 	["ape", "500","", "","" ],
 	["apprentice", "400", "Human", "",""],
