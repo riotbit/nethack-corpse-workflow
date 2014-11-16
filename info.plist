@@ -24,11 +24,13 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>nh</string>
+				<string>nhc</string>
 				<key>script</key>
 				<string>python nethack-workflow.py "{query}"</string>
+				<key>subtext</key>
+				<string>get information about corpses</string>
 				<key>title</key>
-				<string>&lt;...&gt;</string>
+				<string>Nethack Corpses</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
