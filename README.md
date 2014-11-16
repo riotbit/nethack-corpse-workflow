@@ -3,8 +3,8 @@ nethack-corpse-workflow
 
 Alfred 2 workflow to get information about nethack corpses
 
-![chromatic dragon](/screens/path/to/screen_chromatic_dragon?raw=true)
-![yellow mold](/screens/screen_yellow_mold?raw=true)
+![chromatic dragon](/screens/screen_chromatic_dragon.png?raw=true)
+![yellow mold](/screens/screen_yellow_mold.png?raw=true)
 
 ## Usage
 
