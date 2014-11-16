@@ -8,7 +8,6 @@ from workflow import Workflow
 
 log = None
 
- 
 def main(wf):
     # The Workflow instance will be passed to the function
     # you call from `Workflow.run`
@@ -25,12 +24,11 @@ def main(wf):
         query = ""
     i = getItemPos(query)
 
-
     # Add an item to Alfred feedback
     if corpse_data.corpse_list[i][1] != "":
         wf.add_item('Nutrition', corpse_data.corpse_list[i][1], icon="img/nutrition_icon.png")
     else:
-        wf.add_item("<"+query+">", icon="img/nethack_icon.png")
+        wf.add_item(query, 'not found', icon="img/nethack_icon.png")
     if corpse_data.corpse_list[i][2] != "":
         wf.add_item('Inital effects', corpse_data.corpse_list[i][2], icon="img/ieffect_icon.png")
     if corpse_data.corpse_list[i][3] != "":
