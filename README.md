@@ -3,6 +3,9 @@ nethack-corpse-workflow
 
 Alfred 2 workflow to get information about nethack corpses
 
+![chromatic dragon](/screenshots/screens/screen_chromatic_dragon?raw=true "chromatic dragon")
+![yellow mold](/screenshots/screens/screen_yellow_mold?raw=true "yellow mold")
+
 ## Usage
 
 Type "nhc {query}" into Alfred 2.
